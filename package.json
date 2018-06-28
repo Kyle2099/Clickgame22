@@ -1,20 +1,19 @@
 {
-  "name": "Clickgame22",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "click20",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://kyle2099.github.io/Clickgame22",
+  "dependencies": {
+    "gh-pages": "^1.2.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kyle2099/Clickgame22.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Kyle2099/Clickgame22/issues"
-  },
-  "homepage": "https://github.com/Kyle2099/Clickgame22#readme"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
